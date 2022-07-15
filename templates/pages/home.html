@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<h1>Home Page</h1>
+<h2>Welcome to the Spice Isle Blog!</h2>
+<img class="mypic" src="{% static 'img/IMG_6621.jpeg' %}">
 {% endblock content %}

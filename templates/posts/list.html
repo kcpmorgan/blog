@@ -1,7 +1,20 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}Posts{% endblock title %}
 
 {% block content %}
-<h1>Posts</h1>
+<h1>So much to see and do in Grenada!</h1>
+
+<div class="col-md-8 mt-3 left">
+    {% for post in post_list %}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">{{ post.title }}</h2>
+            <p class="card-text">{{post.body|truncatechars:150 }}</p>
+            <a href="{% url 'post_detail' post.id  %}" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
 {% endblock content %}

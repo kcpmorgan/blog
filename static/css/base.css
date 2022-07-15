@@ -1,0 +1,28 @@
+
+navbar {
+    padding: 10px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: blanchedalmond;
+}
+h1 {
+    font-family: fantasy;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.mypic {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+
+footer {
+    text-align: center;
+}
