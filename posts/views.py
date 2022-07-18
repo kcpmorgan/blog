@@ -32,7 +32,7 @@ class DraftPostListView(LoginRequiredMixin, ListView):
             active=False
         ).filter(
             author=self.request.user
-        ).order_by('created_on').reverse()
+            ).order_by('created_on').reverse()
         context["current_datetime"] = datetime.now().strftime("%F %H:%M:%S")
         return context
 
